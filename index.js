@@ -38,22 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
       const now = new Date();
       const hour = now.getHours();
       let background;
-  
-      if (hour >= 5 && hour < 12) {
+       if (hour >=1 && hour < 5) {
+        background = 'mountains-starry-sky-milky-way-night-4k_1536017122.jpg.webp';
+      }
+      else if (hour >= 5 && hour < 12) {
         background = 'flowers-276014_1280.jpg';
       } else if (hour >= 12 && hour < 16) {
         background = 'beach-1751455_1280.jpg';
       } else if (hour >= 16 && hour < 18) {
-        background = 'tree-736885_1280.jpg';
-      }else if (hour >= 16 && hour < 18) {
           background = '1131169.jpg';
     }
     else if (hour >= 18 && hour < 22) {
         // background = 'tree-736885_1280.jpg';
         background = 'peakpx.jpg';
-        }
-         if (hour >=1 && hour < 5) {
-          background = 'mountains-starry-sky-milky-way-night-4k_1536017122.jpg.webp';
         }
         else{ //if (hour >= 22 && hour < 0) {
         background = 'pexels-shakhawat-shaon-6149690.jpg';
